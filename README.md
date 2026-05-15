@@ -53,3 +53,9 @@ npx create-electron-vite-tailwindcss my-app --no-install
 - Tailwind CSS v4 configured through `@tailwindcss/vite` when Tailwind is selected
 - Bootstrap 5 configured in the renderer entry when Bootstrap is selected
 - Ready-to-run scripts: `npm run dev`, `npm run build`, `npm run preview`
+
+## Meet Developer
+
+Gabriel W. Kun 
+
+A Liberian by nationally with proficency in python and javascript, full stack software developer
