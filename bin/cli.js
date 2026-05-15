@@ -309,7 +309,7 @@ Usage:
   npx create-electron-vite-tailwindcss
   npx create-electron-vite-tailwindcss my-app
   npm create electron-vite-tailwindcss my-app
-  npx create-electron-vite-tailwindcss my-app --no-install
+  npx create-electron-vite-tailwindcss my-app --install
 
 You will be prompted for:
   - application name
@@ -322,7 +322,8 @@ That runs a different package named "create" instead of this generator.
 
 Options:
   --help, -h       Show this help message
-  --no-install     Skip installing dependencies after scaffolding
+  --install        Install dependencies after scaffolding
+  --no-install     Explicitly skip dependency installation
 `);
 }
 
@@ -419,13 +420,18 @@ async function copyTemplate(templateDir, targetDir) {
 function parseArgs(argv) {
   const options = {
     help: false,
-    install: true,
+    install: false,
     projectName: undefined,
   };
 
   for (const arg of argv) {
     if (arg === "--help" || arg === "-h") {
       options.help = true;
+      continue;
+    }
+
+    if (arg === "--install") {
+      options.install = true;
       continue;
     }
 

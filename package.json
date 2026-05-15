@@ -1,6 +1,6 @@
 {
   "name": "create-electron-vite-tailwindcss",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Create an Electron + Vite app with Tailwind CSS or Bootstrap 5 already configured",
   "type": "module",
   "bin": {

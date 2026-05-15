@@ -14,6 +14,13 @@ Create an Electron + Vite app with your choice of Tailwind CSS or Bootstrap 5 al
 npx create-electron-vite-tailwindcss my-app
 ```
 
+This now scaffolds the app first without waiting for dependency installation.
+If you want the generator to also install dependencies, use:
+
+```bash
+npx create-electron-vite-tailwindcss my-app --install
+```
+
 You can also use npm's create alias:
 
 ```bash
@@ -36,13 +43,14 @@ During scaffolding you will be prompted for:
 ## Behavior
 
 - Scaffolds an Electron + Vite starter with your selected CSS framework already configured
-- Installs dependencies automatically after generating the project
-- Use `--no-install` if you only want the files created
+- Scaffolds files immediately by default so app creation finishes faster
+- Use `--install` if you want dependencies installed automatically
+- Use `--no-install` to skip dependency installation explicitly
 - Uses Vite 6 and a pinned `esbuild` version in the generated app to avoid newer binary compatibility failures on older macOS versions
 - Uses a smaller dependency set by only installing the framework you selected
 
 ```bash
-npx create-electron-vite-tailwindcss my-app --no-install
+npx create-electron-vite-tailwindcss my-app --install
 ```
 
 ## What Gets Created
@@ -58,4 +66,4 @@ npx create-electron-vite-tailwindcss my-app --no-install
 
 Gabriel W. Kun 
 
-A Liberian by nationally with proficency in python and javascript, full stack software developer
+A Liberian by nationally with proficency in python and javascript, full stack software developer senior student of the Blue Crest University College Liberia. Who is currently serving as MIS Engineer at Orange Liberia also once a junior software developer at Liberia HR Job Board.
