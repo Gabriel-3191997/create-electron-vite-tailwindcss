@@ -1,0 +1,20 @@
+{
+  "name": "electron-vite-tailwindcss-app",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Electron + Vite + Tailwind CSS starter",
+  "main": "out/main/index.js",
+  "scripts": {
+    "dev": "electron-vite dev",
+    "build": "electron-vite build",
+    "preview": "electron-vite preview"
+  },
+  "devDependencies": {
+    "electron": "^32.3.3",
+    "electron-vite": "^4.0.0",
+    "vite": "^6.4.1"
+  },
+  "overrides": {
+    "esbuild": "0.24.2"
+  }
+}
